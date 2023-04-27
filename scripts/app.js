@@ -1,11 +1,7 @@
-var foo = 1
-console.log(foo)
-var bar
-bar = 1
-function test(
+import { renderMainWindow } from "./keyboard-render.js";
 
-
-    ) {
-  console.log(baz)
+function main() {
+  renderMainWindow();
 }
-var baz = 123
+
+main();
