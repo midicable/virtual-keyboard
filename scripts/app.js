@@ -1,4 +1,4 @@
-import { renderMainWindow, renderHeader } from "./keyboard-render.js";
+import { renderMainWindow, renderHeader } from "./components-render.js";
 
 function main() {
   renderMainWindow();

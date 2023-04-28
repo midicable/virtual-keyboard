@@ -28,4 +28,8 @@ const renderHeader = function() {
   container.appendChild(header);
 }
 
+const renderTextArea = function() {
+  
+}
+
 export { renderMainWindow, renderHeader };
