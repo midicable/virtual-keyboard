@@ -1,11 +1,11 @@
-const renderMainWindow = function() {
+const renderMainWindow = function () {
   const body = document.body;
   const container = document.createElement('main');
   container.classList.add('main-container');
   body.prepend(container);
 }
 
-const renderHeader = function() {
+const renderHeader = function () {
   const container = document.querySelector('.main-container');
   const header = document.createElement('header');
   const socialLinksContainer = document.createElement('ul');
@@ -36,7 +36,7 @@ const renderHeader = function() {
   container.appendChild(header);
 }
 
-const renderTextArea = function() {
+const renderTextArea = function () {
   const container =  document.querySelector('.main-container');
   const textArea = document.createElement('textarea');
 
