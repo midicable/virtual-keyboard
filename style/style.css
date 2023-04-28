@@ -16,8 +16,7 @@
 }
 
 .header {
-  width: 100%;
-  max-width: 1280px;
+  width: 754px;
   height: 58px;
   display: flex;
   justify-content: space-between;
