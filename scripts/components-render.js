@@ -29,7 +29,13 @@ const renderHeader = function() {
 }
 
 const renderTextArea = function() {
+  const container =  document.querySelector('.main-container');
+  const textArea = document.createElement('textarea');
+
+  textArea.autofocus = true;
+  textArea.classList.add('textarea');
   
+  container.append(textArea);
 }
 
-export { renderMainWindow, renderHeader };
+export { renderMainWindow, renderHeader, renderTextArea };
