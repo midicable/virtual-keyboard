@@ -8,13 +8,21 @@ const renderMainWindow = function() {
 const renderHeader = function() {
   const container = document.querySelector('.main-container');
   const header = document.createElement('header');
-  const socialLinksContainer = document.createElement('div');
+  const socialLinksContainer = document.createElement('ul');
   const headline = document.createElement('h1');
 
   socialLinksContainer.classList.add('social-links-container');
   socialLinksContainer.innerHTML = 
-      '<img class="social-links-container__link" src="./assets/icons/rss-logo.svg" alt="RSS Logo">\n' +
-      '<img class="social-links-container__link" src="./assets/icons/gh-logo.png" alt="GH Logo">';
+      `<li class="social-links-container__link">
+         <a href="https://rs.school/js/">
+           <img class="rss-logo" src="./assets/icons/rss-logo.svg">
+         </a>
+       </li>
+       <li class="social-links-container__link">
+         <a href="https://github.com/midicable">
+           <img class="github-logo" src="./assets/icons/github-logo.svg">
+         </a>
+       </li>`;
   
   headline.classList.add('headline')
   headline.innerHTML =
