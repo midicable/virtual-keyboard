@@ -46,4 +46,28 @@ const renderTextArea = function () {
   container.append(textArea);
 }
 
-export { renderMainWindow, renderHeader, renderTextArea };
+const renderKeyboard = function () {
+  const container = document.querySelector('.main-container');
+  const keyboard = document.createElement('div');
+
+  keyboard.classList.add('keyboard');
+  keyboard.innerHTML =
+      `<div class="key key-alphabetic">
+         <div class="key-en">
+           <span class="key-en_lowercase">\`</span>
+           <span class="key-en_shifted">~</span>
+           <span class="key-en_capsed">\`</span>
+           <span class="key-en_capsed-shifted">~</span>
+         </div>
+         <div class="key-ru">
+           <span class="key-en_lowercase">ё</span>
+           <span class="key-en_shifted">Ё</span>
+           <span class="key-en_capsed">Ё</span>
+           <span class="key-en_capsed-shifted">ё</span>
+         </div>
+       </div>`;
+
+  container.append(keyboard);
+}
+
+export { renderMainWindow, renderHeader, renderTextArea, renderKeyboard };
