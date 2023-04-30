@@ -46,27 +46,41 @@ const renderTextArea = function () {
   container.append(textArea);
 }
 
-const renderKeyboard = function () {
+const renderKey = function (keyData) {
+  const key = document.createElement('div');
+
+  key.id = keyData.code;
+  key.className = keyData.class;
+  key.innerHTML =
+      `<div class="key-en">
+         <span class="key-en_lowercase">${keyData.en.lowercase}</span>
+         <span class="key-en_shifted hidden">${keyData.en.shifted}</span>
+         <span class="key-en_capsed hidden">${keyData.en.capsed}</span>
+         <span class="key-en_capsed-shifted hidden">${keyData.en.capsed_shifted}</span>
+       </div>
+       <div class="key-ru hidden">
+         <span class="key-en_lowercase">${keyData.ru.lowercase}</span>
+         <span class="key-en_shifted hidden">${keyData.ru.shifted}</span>
+         <span class="key-en_capsed hidde">${keyData.ru.capsed}</span>
+         <span class="key-en_capsed-shifted hidden">${keyData.ru.capsed_shifted}</span>
+       </div>`;
+  
+  return key; 
+}
+
+const renderKeyboard = async function () {
+  const url = './data/keys.json';
+  const response = await fetch(url);
+  const keysData = await response.json();
+
   const container = document.querySelector('.main-container');
   const keyboard = document.createElement('div');
 
   keyboard.classList.add('keyboard');
-  keyboard.innerHTML =
-      `<div class="key key-alphabetic">
-         <div class="key-en">
-           <span class="key-en_lowercase">\`</span>
-           <span class="key-en_shifted">~</span>
-           <span class="key-en_capsed">\`</span>
-           <span class="key-en_capsed-shifted">~</span>
-         </div>
-         <div class="key-ru">
-           <span class="key-en_lowercase">ё</span>
-           <span class="key-en_shifted">Ё</span>
-           <span class="key-en_capsed">Ё</span>
-           <span class="key-en_capsed-shifted">ё</span>
-         </div>
-       </div>`;
-
+  keysData.forEach(keyData => {
+    keyboard.append(renderKey(keyData));
+  });
+      
   container.append(keyboard);
 }
 
