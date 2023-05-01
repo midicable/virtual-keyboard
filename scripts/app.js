@@ -1,10 +1,12 @@
 import { renderMainWindow, renderHeader, renderTextArea, renderKeyboard } from './components-render.js';
+import { initKeyboardBehavior } from './keyboard-behavior.js';
 
-function main() {
+async function main() {
   renderMainWindow();
   renderHeader();
   renderTextArea();
-  renderKeyboard();
+  await renderKeyboard();
+  initKeyboardBehavior();
 }
 
 main();

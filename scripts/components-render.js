@@ -48,6 +48,7 @@ const renderTextArea = function () {
 
 const renderKey = function (keyData) {
   const key = document.createElement('div');
+  const textArea = document.querySelector('.textarea');
 
   key.id = keyData.code;
   key.className = keyData.class;
@@ -61,10 +62,92 @@ const renderKey = function (keyData) {
        <div class="key-ru hidden">
          <span class="key-en_lowercase">${keyData.ru.lowercase}</span>
          <span class="key-en_shifted hidden">${keyData.ru.shifted}</span>
-         <span class="key-en_capsed hidde">${keyData.ru.capsed}</span>
+         <span class="key-en_capsed hidden">${keyData.ru.capsed}</span>
          <span class="key-en_capsed-shifted hidden">${keyData.ru.capsed_shifted}</span>
        </div>`;
   
+  switch (key.id) {
+    case 'Backspace':
+      key.addEventListener('mousedown', () => {
+        key.classList.add('key_pressed');
+      });
+      key.addEventListener('mouseup', () => {
+        key.classList.remove('key_pressed');
+      });
+      key.addEventListener('click', () => {
+        textArea.value = textArea.value.slice(0, -1);
+      });
+      break;
+    case 'Tab':
+      key.addEventListener('mousedown', () => {
+        key.classList.add('key_pressed');
+      });
+      key.addEventListener('mouseup', () => {
+        key.classList.remove('key_pressed');
+      });
+      key.addEventListener('click', () => {
+        textArea.value += '    ';
+      });
+      break;
+    case 'Del':
+      key.addEventListener('mousedown', () => {
+        key.classList.add('key_pressed');
+      });
+      key.addEventListener('mouseup', () => {
+        key.classList.remove('key_pressed');
+      });
+      key.addEventListener('click', () => {
+        textArea.value = textArea.value.slice;
+      });
+      break;
+    case 'CapsLock':
+      break;
+    case 'Enter':
+      key.addEventListener('mousedown', () => {
+        key.classList.add('key_pressed');
+      });
+      key.addEventListener('mouseup', () => {
+        key.classList.remove('key_pressed');
+      });
+      key.addEventListener('click', () => {
+        textArea.value += '\n';
+      });
+      break;
+    default:
+      key.addEventListener('mousedown', () => {
+        key.classList.add('key_pressed');
+      });
+      key.addEventListener('mouseup', () => {
+        key.classList.remove('key_pressed');
+      });
+      key.addEventListener('click', () => {
+        textArea.value += key.querySelector('.key-en_lowercase').textContent;
+      });
+      break;
+  }
+
+  // TODO: CapsLock behavior
+  if (key.id == 'CapsLock') {
+    let isCapsed = false;
+    key.addEventListener('click', () => {
+      // if (!isCapsed) {
+      //   isCapsed = true;
+      //   key.classList.add('key_pressed');
+      //   document.querySelectorAll('.key').forEach(key => {
+      //     key.querySelector('.key-en_lowercase').classList.add('hidden');
+      //     key.querySelector('.key-en_capsed').classList.remove('hidden');
+      //   });
+      // } else {
+      //   isCapsed = false;
+      //   key.classList.remove('key_pressed');
+      //   document.querySelectorAll('.key').forEach(key => {
+      //     key.querySelector('.key-en_lowercase').classList.remove('hidden');
+      //     key.querySelector('.key-en_capsed').classList.add('hidden');
+      //   });
+      // }
+    });
+  }
+
   return key; 
 }
 
