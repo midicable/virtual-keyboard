@@ -1,3 +1,5 @@
+import { getLocalStorage } from './local-storage.js';
+
 const renderMainWindow = function () {
   const body = document.body;
   const container = document.createElement('main');
@@ -52,20 +54,36 @@ const renderKey = function (keyData) {
 
   key.id = keyData.code;
   key.className = keyData.class;
-  key.innerHTML =
-      `<div class="key-en">
-         <span class="key-en_lowercase">${keyData.en.lowercase}</span>
-         <span class="key-en_shifted hidden">${keyData.en.shifted}</span>
-         <span class="key-en_capsed hidden">${keyData.en.capsed}</span>
-         <span class="key-en_capsed-shifted hidden">${keyData.en.capsed_shifted}</span>
-       </div>
-       <div class="key-ru hidden">
-         <span class="key-en_lowercase">${keyData.ru.lowercase}</span>
-         <span class="key-en_shifted hidden">${keyData.ru.shifted}</span>
-         <span class="key-en_capsed hidden">${keyData.ru.capsed}</span>
-         <span class="key-en_capsed-shifted hidden">${keyData.ru.capsed_shifted}</span>
-       </div>`;
-  
+  if (localStorage.getItem('lang') == 'en' || localStorage.getItem('lang') == null) {
+    key.innerHTML =
+        `<div class="key-en">
+           <span class="key-en_lowercase">${keyData.en.lowercase}</span>
+           <span class="key-en_shifted hidden">${keyData.en.shifted}</span>
+           <span class="key-en_capsed hidden">${keyData.en.capsed}</span>
+           <span class="key-en_capsed-shifted hidden">${keyData.en.capsed_shifted}</span>
+         </div>
+         <div class="key-ru hidden">
+           <span class="key-ru_lowercase">${keyData.ru.lowercase}</span>
+           <span class="key-ru_shifted hidden">${keyData.ru.shifted}</span>
+           <span class="key-ru_capsed hidden">${keyData.ru.capsed}</span>
+           <span class="key-ru_capsed-shifted hidden">${keyData.ru.capsed_shifted}</span>
+         </div>`;    
+  } else {
+    key.innerHTML =
+        `<div class="key-en hidden">
+           <span class="key-en_lowercase">${keyData.en.lowercase}</span>
+           <span class="key-en_shifted hidden">${keyData.en.shifted}</span>
+           <span class="key-en_capsed hidden">${keyData.en.capsed}</span>
+           <span class="key-en_capsed-shifted hidden">${keyData.en.capsed_shifted}</span>
+         </div>
+         <div class="key-ru">
+           <span class="key-ru_lowercase">${keyData.ru.lowercase}</span>
+           <span class="key-ru_shifted hidden">${keyData.ru.shifted}</span>
+           <span class="key-ru_capsed hidden">${keyData.ru.capsed}</span>
+           <span class="key-ru_capsed-shifted hidden">${keyData.ru.capsed_shifted}</span>
+         </div>`;  
+  }
+
   switch (key.id) {
     case 'Backspace':
       key.addEventListener('mousedown', () => {
@@ -113,6 +131,101 @@ const renderKey = function (keyData) {
         textArea.value += '\n';
       });
       break;
+    case 'ShiftLeft':
+      key.addEventListener('mousedown', () => {
+        key.classList.add('key_pressed');
+        document.querySelectorAll('.key').forEach(key => {
+          if (getLocalStorage() == 'en') {
+            key.querySelector('.key-en_lowercase').classList.add('hidden');
+            key.querySelector('.key-en_shifted').classList.remove('hidden');
+          } else {
+            key.querySelector('.key-ru_lowercase').classList.add('hidden');
+            key.querySelector('.key-ru_shifted').classList.remove('hidden');
+          }
+        });
+      });
+      key.addEventListener('mouseup', () => {
+        key.classList.remove('key_pressed');
+        document.querySelectorAll('.key').forEach(key => {
+          if (getLocalStorage() == 'en') {
+            key.querySelector('.key-en_lowercase').classList.remove('hidden');
+            key.querySelector('.key-en_shifted').classList.add('hidden');
+          } else {
+            key.querySelector('.key-ru_lowercase').classList.remove('hidden');
+            key.querySelector('.key-ru_shifted').classList.add('hidden');
+          }
+        });
+      });
+      break;
+    case 'ShiftRight':
+      key.addEventListener('mousedown', () => {
+        key.classList.add('key_pressed');
+        document.querySelectorAll('.key').forEach(key => {
+          if (getLocalStorage() == 'en') {
+            key.querySelector('.key-en_lowercase').classList.add('hidden');
+            key.querySelector('.key-en_shifted').classList.remove('hidden');
+          } else {
+            key.querySelector('.key-ru_lowercase').classList.add('hidden');
+            key.querySelector('.key-ru_shifted').classList.remove('hidden');
+          }
+        });
+      });
+      key.addEventListener('mouseup', () => {
+        key.classList.remove('key_pressed');
+        document.querySelectorAll('.key').forEach(key => {
+          if (getLocalStorage() == 'en') {
+            key.querySelector('.key-en_lowercase').classList.remove('hidden');
+            key.querySelector('.key-en_shifted').classList.add('hidden');
+          } else {
+            key.querySelector('.key-ru_lowercase').classList.remove('hidden');
+            key.querySelector('.key-ru_shifted').classList.add('hidden');
+          }
+        });
+      });
+      break;
+    case 'ControlLeft':
+      key.addEventListener('mousedown', () => {
+        key.classList.add('key_pressed');
+      });
+      key.addEventListener('mouseup', () => {
+        key.classList.remove('key_pressed');
+      });
+      break;
+    case 'MetaLeft':
+      key.addEventListener('mousedown', () => {
+        key.classList.add('key_pressed');
+      });
+      key.addEventListener('mouseup', () => {
+        key.classList.remove('key_pressed');
+      });
+      break;
+    case 'AltLeft':
+      key.addEventListener('mousedown', () => {
+        key.classList.add('key_pressed');
+      });
+      key.addEventListener('mouseup', () => {
+        key.classList.remove('key_pressed');
+      });
+      break;
+    case 'Space':
+      key.addEventListener('mousedown', () => {
+        key.classList.add('key_pressed');
+      });
+      key.addEventListener('mouseup', () => {
+        key.classList.remove('key_pressed');
+      });
+      key.addEventListener('click', () => {
+        textArea.value += ' ';
+      });
+      break;
+    case 'AltRight':
+      key.addEventListener('mousedown', () => {
+        key.classList.add('key_pressed');
+      });
+      key.addEventListener('mouseup', () => {
+        key.classList.remove('key_pressed');
+      });
+      break;
     default:
       key.addEventListener('mousedown', () => {
         key.classList.add('key_pressed');
@@ -121,31 +234,21 @@ const renderKey = function (keyData) {
         key.classList.remove('key_pressed');
       });
       key.addEventListener('click', () => {
-        textArea.value += key.querySelector('.key-en_lowercase').textContent;
+        if (getLocalStorage() == 'ru') {
+          Array.from(key.querySelector('.key-ru').children).forEach(child => {
+            if (!child.classList.contains('hidden')) {
+              textArea.value += child.textContent;
+            }
+          });
+        } else {
+          Array.from(key.querySelector('.key-en').children).forEach(child => {
+            if (!child.classList.contains('hidden')) {
+              textArea.value += child.textContent;
+            }
+          });
+        }
       });
       break;
-  }
-
-  // TODO: CapsLock behavior
-  if (key.id == 'CapsLock') {
-    let isCapsed = false;
-    key.addEventListener('click', () => {
-      // if (!isCapsed) {
-      //   isCapsed = true;
-      //   key.classList.add('key_pressed');
-      //   document.querySelectorAll('.key').forEach(key => {
-      //     key.querySelector('.key-en_lowercase').classList.add('hidden');
-      //     key.querySelector('.key-en_capsed').classList.remove('hidden');
-      //   });
-      // } else {
-      //   isCapsed = false;
-      //   key.classList.remove('key_pressed');
-      //   document.querySelectorAll('.key').forEach(key => {
-      //     key.querySelector('.key-en_lowercase').classList.remove('hidden');
-      //     key.querySelector('.key-en_capsed').classList.add('hidden');
-      //   });
-      // }
-    });
   }
 
   return key; 

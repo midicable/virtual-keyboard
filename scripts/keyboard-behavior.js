@@ -1,19 +1,27 @@
+import { getLocalStorage, setLocalStorage } from "./local-storage.js";
+
 const initKeyboardBehavior = function () {
   const keyboard = document.querySelector('.keyboard');
-  const textArea = document.querySelector('.textarea');
-  let isCapsed = false;
 
-  console.log(keyboard);
   document.addEventListener('keydown', event => {
-    switch (event.code) {
-      default:
-        event.preventDefault();
-        document.querySelector(`#${event.code}`).dispatchEvent(new Event('mousedown'));
-        document.querySelector(`#${event.code}`).dispatchEvent(new Event('click'));
+    if (event.code == 'AltLeft' && event.ctrlKey) {
+      if (getLocalStorage() == 'en') {
+        setLocalStorage('ru');
+      } else {
+        setLocalStorage('en');
+      }
+      document.querySelectorAll('.key').forEach(key => {
+        key.querySelector('.key-ru').classList.toggle('hidden');
+        key.querySelector('.key-en').classList.toggle('hidden');
+      });
     }
+    event.preventDefault();
+    document.querySelector(`#${event.code}`).dispatchEvent(new Event('mousedown'));
+    document.querySelector(`#${event.code}`).dispatchEvent(new Event('click'));
   });
+
   document.addEventListener('keyup', event => {
-    keyboard.querySelector(`#${event.code}`).classList.remove('key_pressed');
+    document.querySelector(`#${event.code}`).dispatchEvent(new Event('mouseup'));
   });
 }
 
