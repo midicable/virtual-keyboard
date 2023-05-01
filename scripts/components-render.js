@@ -270,4 +270,22 @@ const renderKeyboard = async function () {
   container.append(keyboard);
 }
 
-export { renderMainWindow, renderHeader, renderTextArea, renderKeyboard };
+const renderFooter = function () {
+  const container = document.querySelector('.main-container');
+  const footer = document.createElement('footer');
+  const OSDescriptionElement = document.createElement('p');
+  const layoutChangeHint = document.createElement('p');
+
+  OSDescriptionElement.classList.add('os-desc');
+  OSDescriptionElement.textContent = 'Dev. OS - Windows 10';
+  layoutChangeHint.classList.add('hotkey');
+  layoutChangeHint.textContent = 'Ctrl + Alt - change keyboard layout';
+
+  footer.classList.add('footer');
+  footer.append(OSDescriptionElement);
+  footer.append(layoutChangeHint);
+
+  container.append(footer);
+}
+
+export { renderMainWindow, renderHeader, renderTextArea, renderKeyboard, renderFooter };
