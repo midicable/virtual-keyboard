@@ -1,0 +1,1026 @@
+[
+  {
+    "code": "Backquote",
+    "class": "key",
+    "en": {
+      "lowercase": "`",
+      "shifted": "~",
+      "capsed": "`",
+      "capsed_shifted": "~"
+    },
+    "ru": {
+      "lowercase": "ё",
+      "shifted": "Ё",
+      "capsed": "Ё",
+      "capsed_shifted": "ё"
+    }
+  },
+  {
+    "code": "Digit1",
+    "class": "key",
+    "en": {
+      "lowercase": "1",
+      "shifted": "!",
+      "capsed": "1",
+      "capsed_shifted": "!"
+    },
+    "ru": {
+      "lowercase": "1",
+      "shifted": "!",
+      "capsed": "1",
+      "capsed_shifted": "!"
+    }
+  },
+  {
+    "code": "Digit2",
+    "class": "key",
+    "en": {
+      "lowercase": "2",
+      "shifted": "@",
+      "capsed": "2",
+      "capsed_shifted": "@"
+    },
+    "ru": {
+      "lowercase": "2",
+      "shifted": "\"",
+      "capsed": "2", 
+      "capsed_shifted": "\""
+    }
+  },
+  {
+    "code": "Digit3",
+    "class": "key",
+    "en": {
+      "lowercase": "3",
+      "shifted": "#",
+      "capsed": "3",
+      "capsed_shifted": "#"
+    },
+    "ru": {
+      "lowercase": "3",
+      "shifted": "№",
+      "capsed": "3",
+      "capsed_shifted": "№"
+    }
+  },
+  {
+    "code": "Digit4",
+    "class": "key",
+    "en": {
+      "lowercase": "4",
+      "shifted": "$",
+      "capsed": "4",
+      "capsed_shifted": "$"
+    },
+    "ru": {
+      "lowercase": "4",
+      "shifted": ";",
+      "capsed": "4",
+      "capsed_shifted": ";"
+    }
+  },
+  {
+    "code": "Digit5",
+    "class": "key",
+    "en": {
+      "lowercase": "5",
+      "shifted": "%",
+      "capsed": "5",
+      "capsed_shifted": "%"
+    },
+    "ru": {
+      "lowercase": "5",
+      "shifted": "%",
+      "capsed": "5",
+      "capsed_shifted": "%"
+    }
+  },
+  {
+    "code": "Digit6",
+    "class": "key",
+    "en": {
+      "lowercase": "6",
+      "shifted": "^",
+      "capsed": "6",
+      "capsed_shifted": "^"
+    },
+    "ru": {
+      "lowercase": "6",
+      "shifted": ":",
+      "capsed": "6",
+      "capsed_shifted": ":"
+    }
+  },
+  {
+    "code": "Digit7",
+    "class": "key",
+    "en": {
+      "lowercase": "7",
+      "shifted": "&",
+      "capsed": "7",
+      "capsed_shifted": "&"
+    },
+    "ru": {
+      "lowercase": "7",
+      "shifted": "?",
+      "capsed": "7",
+      "capsed_shifted": "?"
+    }
+  },
+  {
+    "code": "Digit8",
+    "class": "key",
+    "en": {
+      "lowercase": "8",
+      "shifted": "*",
+      "capsed": "8",
+      "capsed_shifted": "*"
+    },
+    "ru": {
+      "lowercase": "8",
+      "shifted": "*",
+      "capsed": "8",
+      "capsed_shifted": "*"
+    }
+  },
+  {
+    "code": "Digit9",
+    "class": "key",
+    "en": {
+      "lowercase": "9",
+      "shifted": "(",
+      "capsed": "9",
+      "capsed_shifted": "("
+    },
+    "ru": {
+      "lowercase": "9",
+      "shifted": "(",
+      "capsed": "9",
+      "capsed_shifted": "("
+    }
+  },
+  {
+    "code": "Digit0",
+    "class": "key",
+    "en": {
+      "lowercase": "0",
+      "shifted": ")",
+      "capsed": "0",
+      "capsed_shifted": ")"
+    },
+    "ru": {
+      "lowercase": "0",
+      "shifted": ")",
+      "capsed": "0",
+      "capsed_shifted": ")"
+    }
+  },
+  {
+    "code": "Minus",
+    "class": "key",
+    "en": {
+      "lowercase": "-",
+      "shifted": "_",
+      "capsed": "-",
+      "capsed_shifted": "_"
+    },
+    "ru": {
+      "lowercase": "-",
+      "shifted": "_",
+      "capsed": "-",
+      "capsed_shifted": "_"
+    }
+  },
+  {
+    "code": "Equal",
+    "class": "key",
+    "en": {
+      "lowercase": "=",
+      "shifted": "+",
+      "capsed": "=",
+      "capsed_shifted": "+"
+    },
+    "ru": {
+      "lowercase": "=",
+      "shifted": "+",
+      "capsed": "=",
+      "capsed_shifted": "+"
+    }
+  },
+  {
+    "code": "Backspace",
+    "class": "key key-backspace",
+    "en": {
+      "lowercase": "Backspace",
+      "shifted": "Backspace",
+      "capsed": "Backspace",
+      "capsed_shifted": "Backspace"
+    },
+    "ru": {
+      "lowercase": "Backspace",
+      "shifted": "Backspace",
+      "capsed": "Backspace",
+      "capsed_shifted": "Backspace"
+    }
+  },
+  {
+    "code": "Tab",
+    "class": "key key-tab",
+    "en": {
+      "lowercase": "Tab",
+      "shifted": "Tab",
+      "capsed": "Tab",
+      "capsed_shifted": "Tab"
+    },
+    "ru": {
+      "lowercase": "Tab",
+      "shifted": "Tab",
+      "capsed": "Tab",
+      "capsed_shifted": "Tab"
+    }
+  },
+  {
+    "code": "KeyQ",
+    "class": "key",
+    "en": {
+      "lowercase": "q",
+      "shifted": "Q",
+      "capsed": "Q",
+      "capsed_shifted": "q"
+    },
+    "ru": {
+      "lowercase": "й",
+      "shifted": "Й",
+      "capsed": "Й",
+      "capsed_shifted": "й"
+    }
+  },
+  {
+    "code": "KeyW",
+    "class": "key",
+    "en": {
+      "lowercase": "w",
+      "shifted": "W",
+      "capsed": "W",
+      "capsed_shifted": "w"
+    },
+    "ru": {
+      "lowercase": "ц",
+      "shifted": "Ц",
+      "capsed": "Ц",
+      "capsed_shifted": "ц"
+    }
+  },
+  {
+    "code": "KeyE",
+    "class": "key",
+    "en": {
+      "lowercase": "e",
+      "shifted": "E",
+      "capsed": "E",
+      "capsed_shifted": "e"
+    },
+    "ru": {
+      "lowercase": "у",
+      "shifted": "У",
+      "capsed": "У",
+      "capsed_shifted": "у"
+    }
+  },
+  {
+    "code": "KeyR",
+    "class": "key",
+    "en": {
+      "lowercase": "r",
+      "shifted": "R",
+      "capsed": "R",
+      "capsed_shifted": "r"
+    },
+    "ru": {
+      "lowercase": "к",
+      "shifted": "К",
+      "capsed": "К",
+      "capsed_shifted": "к"
+    }
+  },
+  {
+    "code": "KeyT",
+    "class": "key",
+    "en": {
+      "lowercase": "t",
+      "shifted": "T",
+      "capsed": "T",
+      "capsed_shifted": "t"
+    },
+    "ru": {
+      "lowercase": "е",
+      "shifted": "Е",
+      "capsed": "Е",
+      "capsed_shifted": "е"
+    }
+  },
+  {
+    "code": "KeyY",
+    "class": "key",
+    "en": {
+      "lowercase": "y",
+      "shifted": "Y",
+      "capsed": "Y",
+      "capsed_shifted": "y"
+    },
+    "ru": {
+      "lowercase": "н",
+      "shifted": "Н",
+      "capsed": "Н",
+      "capsed_shifted": "н"
+    }
+  },
+  {
+    "code": "KeyU",
+    "class": "key",
+    "en": {
+      "lowercase": "u",
+      "shifted": "U",
+      "capsed": "U",
+      "capsed_shifted": "u"
+    },
+    "ru": {
+      "lowercase": "г",
+      "shifted": "Г",
+      "capsed": "Г",
+      "capsed_shifted": "г"
+    }
+  },
+  {
+    "code": "KeyI",
+    "class": "key",
+    "en": {
+      "lowercase": "i",
+      "shifted": "I",
+      "capsed": "I",
+      "capsed_shifted": "i"
+    },
+    "ru": {
+      "lowercase": "ш",
+      "shifted": "Ш",
+      "capsed": "Ш",
+      "capsed_shifted": "ш"
+    }
+  },
+  {
+    "code": "KeyO",
+    "class": "key",
+    "en": {
+      "lowercase": "o",
+      "shifted": "O",
+      "capsed": "O",
+      "capsed_shifted": "o"
+    },
+    "ru": {
+      "lowercase": "щ",
+      "shifted": "Щ",
+      "capsed": "Щ",
+      "capsed_shifted": "щ"
+    }
+  },
+  {
+    "code": "KeyP",
+    "class": "key",
+    "en": {
+      "lowercase": "p",
+      "shifted": "P",
+      "capsed": "P",
+      "capsed_shifted": "p"
+    },
+    "ru": {
+      "lowercase": "з",
+      "shifted": "З",
+      "capsed": "З",
+      "capsed_shifted": "з"
+    }
+  },
+  {
+    "code": "BracketLeft",
+    "class": "key",
+    "en": {
+      "lowercase": "[",
+      "shifted": "{",
+      "capsed": "[",
+      "capsed_shifted": "{"
+    },
+    "ru": {
+      "lowercase": "х",
+      "shifted": "Х",
+      "capsed": "Х",
+      "capsed_shifted": "х"
+    }
+  },
+  {
+    "code": "BracketRight",
+    "class": "key",
+    "en": {
+      "lowercase": "]",
+      "shifted": "}",
+      "capsed": "]",
+      "capsed_shifted": "}"
+    },
+    "ru": {
+      "lowercase": "ъ",
+      "shifted": "Ъ",
+      "capsed": "Ъ",
+      "capsed_shifted": "ъ"
+    }
+  },
+  {
+    "code": "Backslash",
+    "class": "key",
+    "en": {
+      "lowercase": "\\",
+      "shifted": "|",
+      "capsed": "\\",
+      "capsed_shifted": "|"
+    },
+    "ru": {
+      "lowercase": "\\",
+      "shifted": "/",
+      "capsed": "\\",
+      "capsed_shifted": "/"
+    }
+  },
+  {
+    "code": "Delete",
+    "class": "key key-del",
+    "en": {
+      "lowercase": "Del",
+      "shifted": "Del",
+      "capsed": "Del",
+      "capsed_shifted": "Del"
+    },
+    "ru": {
+      "lowercase": "Del",
+      "shifted": "Del",
+      "capsed": "Del",
+      "capsed_shifted": "Del"
+    }
+  },
+  {
+    "code": "CapsLock",
+    "class": "key key-caps",
+    "en": {
+      "lowercase": "Caps Lock",
+      "shifted": "Caps Lock",
+      "capsed": "Caps Lock",
+      "capsed_shifted": "Caps Lock"
+    },
+    "ru": {
+      "lowercase": "Caps Lock",
+      "shifted": "Caps Lock",
+      "capsed": "Caps Lock",
+      "capsed_shifted": "Caps Lock"
+    }
+  },
+  {
+    "code": "KeyA",
+    "class": "key",
+    "en": {
+      "lowercase": "a",
+      "shifted": "A",
+      "capsed": "A",
+      "capsed_shifted": "a"
+    },
+    "ru": {
+      "lowercase": "ф",
+      "shifted": "Ф",
+      "capsed": "Ф",
+      "capsed_shifted": "ф"
+    }
+  },
+  {
+    "code": "KeyS",
+    "class": "key",
+    "en": {
+      "lowercase": "s",
+      "shifted": "S",
+      "capsed": "S",
+      "capsed_shifted": "s"
+    },
+    "ru": {
+      "lowercase": "ы",
+      "shifted": "Ы",
+      "capsed": "Ы",
+      "capsed_shifted": "ы"
+    }
+  },
+  {
+    "code": "KeyD",
+    "class": "key",
+    "en": {
+      "lowercase": "d",
+      "shifted": "D",
+      "capsed": "D",
+      "capsed_shifted": "d"
+    },
+    "ru": {
+      "lowercase": "в",
+      "shifted": "В",
+      "capsed": "В",
+      "capsed_shifted": "в"
+    }
+  },
+  {
+    "code": "KeyF",
+    "class": "key",
+    "en": {
+      "lowercase": "f",
+      "shifted": "F",
+      "capsed": "F",
+      "capsed_shifted": "f"
+    },
+    "ru": {
+      "lowercase": "а",
+      "shifted": "А",
+      "capsed": "А",
+      "capsed_shifted": "а"
+    }
+  },
+  {
+    "code": "KeyG",
+    "class": "key",
+    "en": {
+      "lowercase": "g",
+      "shifted": "G",
+      "capsed": "G",
+      "capsed_shifted": "g"
+    },
+    "ru": {
+      "lowercase": "п",
+      "shifted": "П",
+      "capsed": "П",
+      "capsed_shifted": "п"
+    }
+  },
+  {
+    "code": "KeyH",
+    "class": "key",
+    "en": {
+      "lowercase": "h",
+      "shifted": "H",
+      "capsed": "H",
+      "capsed_shifted": "h"
+    },
+    "ru": {
+      "lowercase": "р",
+      "shifted": "Р",
+      "capsed": "Р",
+      "capsed_shifted": "р"
+    }
+  },
+  {
+    "code": "KeyJ",
+    "class": "key",
+    "en": {
+      "lowercase": "j",
+      "shifted": "J",
+      "capsed": "J",
+      "capsed_shifted": "j"
+    },
+    "ru": {
+      "lowercase": "о",
+      "shifted": "О",
+      "capsed": "О",
+      "capsed_shifted": "о"
+    }
+  },
+  {
+    "code": "KeyK",
+    "class": "key",
+    "en": {
+      "lowercase": "k",
+      "shifted": "K",
+      "capsed": "K",
+      "capsed_shifted": "k"
+    },
+    "ru": {
+      "lowercase": "л",
+      "shifted": "Л",
+      "capsed": "Л",
+      "capsed_shifted": "л"
+    }
+  },
+  {
+    "code": "KeyL",
+    "class": "key",
+    "en": {
+      "lowercase": "l",
+      "shifted": "L",
+      "capsed": "L",
+      "capsed_shifted": "l"
+    },
+    "ru": {
+      "lowercase": "д",
+      "shifted": "Д",
+      "capsed": "Д",
+      "capsed_shifted": "д"
+    }
+  },
+  {
+    "code": "Semicolon",
+    "class": "key",
+    "en": {
+      "lowercase": ";",
+      "shifted": ":",
+      "capsed": ";",
+      "capsed_shifted": ":"
+    },
+    "ru": {
+      "lowercase": "ж",
+      "shifted": "Ж",
+      "capsed": "Ж",
+      "capsed_shifted": "ж"
+    }
+  },
+  {
+    "code": "Quote",
+    "class": "key",
+    "en": {
+      "lowercase": "'",
+      "shifted": "\"",
+      "capsed": "'",
+      "capsed_shifted": "\""
+    },
+    "ru": {
+      "lowercase": "э",
+      "shifted": "Э",
+      "capsed": "Э",
+      "capsed_shifted": "э"
+    }
+  },
+  {
+    "code": "Enter",
+    "class": "key key-enter",
+    "en": {
+      "lowercase": "Enter",
+      "shifted": "Enter",
+      "capsed": "Enter",
+      "capsed_shifted": "Enter"
+    },
+    "ru": {
+      "lowercase": "Enter",
+      "shifted": "Enter",
+      "capsed": "Enter",
+      "capsed_shifted": "Enter"
+    }
+  },
+  {
+    "code": "ShiftLeft",
+    "class": "key key-lshift",
+    "en": {
+      "lowercase": "Shift",
+      "shifted": "Shift",
+      "capsed": "Shift",
+      "capsed_shifted": "Shift"
+    },
+    "ru": {
+      "lowercase": "Shift",
+      "shifted": "Shift",
+      "capsed": "Shift",
+      "capsed_shifted": "Shift"
+    }
+  },
+  {
+    "code": "KeyZ",
+    "class": "key",
+    "en": {
+      "lowercase": "z",
+      "shifted": "Z",
+      "capsed": "Z",
+      "capsed_shifted": "z"
+    },
+    "ru": {
+      "lowercase": "я",
+      "shifted": "Я",
+      "capsed": "Я",
+      "capsed_shifted": "я"
+    }
+  },
+  {
+    "code": "KeyX",
+    "class": "key",
+    "en": {
+      "lowercase": "x",
+      "shifted": "X",
+      "capsed": "X",
+      "capsed_shifted": "x"
+    },
+    "ru": {
+      "lowercase": "ч",
+      "shifted": "Ч",
+      "capsed": "Ч",
+      "capsed_shifted": "ч"
+    }
+  },
+  {
+    "code": "KeyC",
+    "class": "key",
+    "en": {
+      "lowercase": "c",
+      "shifted": "C",
+      "capsed": "C",
+      "capsed_shifted": "c"
+    },
+    "ru": {
+      "lowercase": "с",
+      "shifted": "С",
+      "capsed": "С",
+      "capsed_shifted": "с"
+    }
+  },
+  {
+    "code": "KeyV",
+    "class": "key",
+    "en": {
+      "lowercase": "v",
+      "shifted": "V",
+      "capsed": "V",
+      "capsed_shifted": "v"
+    },
+    "ru": {
+      "lowercase": "м",
+      "shifted": "М",
+      "capsed": "М",
+      "capsed_shifted": "м"
+    }
+  },
+  {
+    "code": "KeyB",
+    "class": "key",
+    "en": {
+      "lowercase": "b",
+      "shifted": "B",
+      "capsed": "B",
+      "capsed_shifted": "b"
+    },
+    "ru": {
+      "lowercase": "и",
+      "shifted": "И",
+      "capsed": "И",
+      "capsed_shifted": "и"
+    }
+  },
+  {
+    "code": "KeyN",
+    "class": "key",
+    "en": {
+      "lowercase": "n",
+      "shifted": "N",
+      "capsed": "N",
+      "capsed_shifted": "n"
+    },
+    "ru": {
+      "lowercase": "т",
+      "shifted": "Т",
+      "capsed": "Т",
+      "capsed_shifted": "т"
+    }
+  },
+  {
+    "code": "KeyM",
+    "class": "key",
+    "en": {
+      "lowercase": "m",
+      "shifted": "M",
+      "capsed": "M",
+      "capsed_shifted": "m"
+    },
+    "ru": {
+      "lowercase": "ь",
+      "shifted": "Ь",
+      "capsed": "Ь",
+      "capsed_shifted": "ь"
+    }
+  },
+  {
+    "code": "Comma",
+    "class": "key",
+    "en": {
+      "lowercase": ",",
+      "shifted": "<",
+      "capsed": ",",
+      "capsed_shifted": "<"
+    },
+    "ru": {
+      "lowercase": "б",
+      "shifted": "Б",
+      "capsed": "Б",
+      "capsed_shifted": "б"
+    }
+  },
+  {
+    "code": "Period",
+    "class": "key",
+    "en": {
+      "lowercase": ".",
+      "shifted": ">",
+      "capsed": ".",
+      "capsed_shifted": ">"
+    },
+    "ru": {
+      "lowercase": "ю",
+      "shifted": "Ю",
+      "capsed": "Ю",
+      "capsed_shifted": "ю"
+    }
+  },
+  {
+    "code": "Slash",
+    "class": "key",
+    "en": {
+      "lowercase": "/",
+      "shifted": "?",
+      "capsed": "/",
+      "capsed_shifted": "?"
+    },
+    "ru": {
+      "lowercase": ".",
+      "shifted": ",",
+      "capsed": ".",
+      "capsed_shifted": ","
+    }
+  },
+  {
+    "code": "ArrowUp",
+    "class": "key key-arrow",
+    "en": {
+      "lowercase": "▲",
+      "shifted": "▲",
+      "capsed": "▲",
+      "capsed_shifted": "▲"
+    },
+    "ru": {
+      "lowercase": "▲",
+      "shifted": "▲",
+      "capsed": "▲",
+      "capsed_shifted": "▲"
+    }
+  },
+  {
+    "code": "ShiftRight",
+    "class": "key key-rshift",
+    "en": {
+      "lowercase": "Shift",
+      "shifted": "Shift",
+      "capsed": "Shift",
+      "capsed_shifted": "Shift"
+    },
+    "ru": {
+      "lowercase": "Shift",
+      "shifted": "Shift",
+      "capsed": "Shift",
+      "capsed_shifted": "Shift"
+    }
+  },
+  {
+    "code": "ControlLeft",
+    "class": "key key-ctrl",
+    "en": {
+      "lowercase": "Ctrl",
+      "shifted": "Ctrl",
+      "capsed": "Ctrl",
+      "capsed_shifted": "Ctrl"
+    },
+    "ru": {
+      "lowercase": "Ctrl",
+      "shifted": "Ctrl",
+      "capsed": "Ctrl",
+      "capsed_shifted": "Ctrl"
+    }
+  },
+  {
+    "code": "MetaLeft",
+    "class": "key key-win",
+    "en": {
+      "lowercase": "Win",
+      "shifted": "Win",
+      "capsed": "Win",
+      "capsed_shifted": "Win"
+    },
+    "ru": {
+      "lowercase": "Win",
+      "shifted": "Win",
+      "capsed": "Win",
+      "capsed_shifted": "Win"
+    }
+  },
+  {
+    "code": "AltLeft",
+    "class": "key key-alt",
+    "en": {
+      "lowercase": "Alt",
+      "shifted": "Alt",
+      "capsed": "Alt",
+      "capsed_shifted": "Alt"
+    },
+    "ru": {
+      "lowercase": "Alt",
+      "shifted": "Alt",
+      "capsed": "Alt",
+      "capsed_shifted": "Alt"
+    }
+  },
+  {
+    "code": "Space",
+    "class": "key key-space",
+    "en": {
+      "lowercase": "Space",
+      "shifted": "Space",
+      "capsed": "Space",
+      "capsed_shifted": "Space"
+    },
+    "ru": {
+      "lowercase": "Space",
+      "shifted": "Space",
+      "capsed": "Space",
+      "capsed_shifted": "Space"
+    }
+  },
+  {
+    "code": "AltRight",
+    "class": "key key-alt",
+    "en": {
+      "lowercase": "Alt",
+      "shifted": "Alt",
+      "capsed": "Alt",
+      "capsed_shifted": "Alt"
+    },
+    "ru": {
+      "lowercase": "Alt",
+      "shifted": "Alt",
+      "capsed": "Alt",
+      "capsed_shifted": "Alt"
+    }
+  },
+  {
+    "code": "ArrowLeft",
+    "class": "key key-arrow",
+    "en": {
+      "lowercase": "◀",
+      "shifted": "◀",
+      "capsed": "◀",
+      "capsed_shifted": "◀"
+    },
+    "ru": {
+      "lowercase": "◀",
+      "shifted": "◀",
+      "capsed": "◀",
+      "capsed_shifted": "◀"
+    }
+  },
+  {
+    "code": "ArrowDown",
+    "class": "key key-arrow",
+    "en": {
+      "lowercase": "▼",
+      "shifted": "▼",
+      "capsed": "▼",
+      "capsed_shifted": "▼"
+    },
+    "ru": {
+      "lowercase": "▼",
+      "shifted": "▼",
+      "capsed": "▼",
+      "capsed_shifted": "▼"
+    }
+  },
+  {
+    "code": "ArrowRight",
+    "class": "key key-arrow",
+    "en": {
+      "lowercase": "▶",
+      "shifted": "▶",
+      "capsed": "▶",
+      "capsed_shifted": "▶"
+    },
+    "ru": {
+      "lowercase": "▶",
+      "shifted": "▶",
+      "capsed": "▶",
+      "capsed_shifted": "▶"
+    }
+  },
+  {
+    "code": "ControlRight",
+    "class": "key key-ctrl",
+    "en": {
+      "lowercase": "Ctrl",
+      "shifted": "Ctrl",
+      "capsed": "Ctrl",
+      "capsed_shifted": "Ctrl"
+    },
+    "ru": {
+      "lowercase": "Ctrl",
+      "shifted": "Ctrl",
+      "capsed": "Ctrl",
+      "capsed_shifted": "Ctrl"
+    }
+  }
+]

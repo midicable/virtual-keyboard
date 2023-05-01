@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+.main-container {
+  min-width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(/assets/images/virtual-keyboard-bg.svg);
+  background-size: cover;
+}
+
+.header {
+  width: 754px;
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links-container {
+  width: 141px;
+  height: 32px;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.rss-logo {
+  display: block;
+  width: 88px;
+  height: 32px;
+}
+
+.github-logo {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.headline {
+  font-family: 'Inter', sans-serif;
+  color: #171717;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+}
+
+.textarea {
+  outline: none;
+  resize: none;
+  border: none;
+  width: 754px;
+  height: 211px;
+  margin-top: 48px;
+  padding: 25px;
+  border-radius: 9px;
+  background-color: #171717;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #38ba23;
+}
+
+.keyboard {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px 10px;
+  width: 774px;
+  height: 260px;
+  margin-top: 27px;
+  padding: 10px;
+  border-radius: 9px;
+  background-color: #eaeaea;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.key {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fbfbfb;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #171717;
+  border-radius: 6px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  transition: .2s ease-in-out;
+}
+
+.key:hover {
+  cursor: pointer;
+}
+
+.key-arrow {
+  background-color: #ffa858;
+}
+
+.key-backspace, 
+.key-caps,
+.key-lshift {
+  width: 104px;
+  background-color: #171717;
+  color: #fbfbfb;
+}
+
+.key-tab {
+  width: 50px;
+  background-color: #171717;
+  color: #fbfbfb;
+}
+
+.key-del {
+  width: 44px;
+  background-color: #171717;
+  color: #fbfbfb;
+}
+
+.key-enter,
+.key-rshift {
+  width: 90px;
+  background-color: #171717;
+  color: #fbfbfb;
+}
+
+.key-ctrl,
+.key-win,
+.key-alt {
+  background-color: #171717;
+  color: #fbfbfb;
+}
+
+.key-space {
+  width: 354px;
+  background-color: #171717;
+  color: #fbfbfb;
+}
+
+.hidden {
+  display: none;
+}
+
+.key_pressed {
+  transform: scale(0.95);
+  box-shadow:
+    0 0 20px 2px #0ff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.os-desc, 
+.hotkey {
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #FBFBFB;
+  text-align: center;
+}
