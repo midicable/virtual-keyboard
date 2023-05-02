@@ -16,7 +16,7 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url(/assets/images/virtual-keyboard-bg.svg);
+  background: url("../assets/images/virtual-keyboard-bg.svg");
   background-size: cover;
 }
 
